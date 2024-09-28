@@ -11,6 +11,7 @@ body {
 }
 
 /* Landing Section */
+/* Adjusting the landing section content layout */
 #landing {
     height: 100vh;
     background: url('path/to/banner-image.jpg') no-repeat center center/cover;
@@ -20,32 +21,63 @@ body {
     text-align: center;
 }
 
+#landing .content {
+    max-width: 700px;
+    color: #f39c12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds space between the paragraph and buttons */
+}
+
 #landing h1 {
     font-size: 3rem;
-    color: white;
 }
 
 #landing span {
     color: #f39c12;
 }
 
+#landing p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#landing .cta {
+    display: flex;
+    gap: 20px; /* Adds space between buttons */
+}
+
 #landing .cta a {
     padding: 10px 20px;
     background-color: #f39c12;
     color: white;
-    margin: 10px;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#landing .cta a:hover {
+    background-color: #e67e22;
 }
 
 #about, #projects, #contact {
     padding: 50px 100px;
     text-align: center;
+
 }
 
 #about h2, #projects h2, #contact h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #f39c12;
+
+}
+
+#about p {
+    margin: 40px;
 }
 
 #about p, #projects p, #contact p {
